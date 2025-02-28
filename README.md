@@ -85,7 +85,7 @@ uidNumber: 1001
 gidNumber: 1001
 homeDirectory: /home/teste
 loginShell: /bin/bash
-userPassword: {SSHA}Qz7+jDwE5s5TdzcWxKM0K60GlXq8nDTV
+userPassword: GERAR PELO LDAP
 ```
 
 Salve e aplique:
