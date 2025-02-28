@@ -147,15 +147,17 @@ Agora configure o navegador e teste a autenticação!
 ### Solução: Criar a OU "usuarios" primeiro
 1️⃣ Crie um arquivo para a unidade organizacional:
 
-bash
+ ```bash
 sudo nano criar_ou.ldif
 Adicione o seguinte conteúdo:
 
 dn: ou=usuarios,dc=meu-dominio,dc=local
 objectClass: organizationalUnit
 ou: usuarios
+  ```
 2️⃣ Adicione ao LDAP:
 
-bash
+ ```bash
 sudo ldapadd -x -D "cn=admin,dc=meu-dominio,dc=local" -W -f criar_ou.ldif
+  ```
 💡 Isso cria a unidade organizacional usuarios dentro do seu diretório LDAP.
