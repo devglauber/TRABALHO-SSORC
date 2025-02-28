@@ -26,6 +26,10 @@ sudo apt-get install slapd ldap-utils -y
 ```
 Durante a instalação, defina uma senha forte para o administrador do LDAP (usuário `admin` do diretório).
 
+#### Após instalar aplique o comando para configurar o LDAP
+```bash
+sudo dpkg-reconfigure slapd
+```
 #### Configuração:
 - **Omitir configuração do Banco de Dados LDAP?** → **Não**
 - **Nome de Domínio Base:** `meu-dominio.local` (ou substitua pelo seu domínio real)
