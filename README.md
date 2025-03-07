@@ -1,4 +1,5 @@
 # Autenticação de Usuários no Squid Proxy usando LDAP
+LDAP (Lightweight Directory Access Protocol) é um protocolo utilizado para acessar e gerenciar diretórios de informações de forma organizada e hierárquica. Ele é amplamente usado para autenticação e autorização em redes corporativas, permitindo que usuários e sistemas acessem dados de maneira centralizada.
 
 ## Trabalho de SSORC
 **Dupla:** Glauber De Melo Duarte e Eryka Rodrigues  
