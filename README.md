@@ -88,7 +88,7 @@ homeDirectory: /home/teste
 loginShell: /bin/bash
 userPassword: GERAR PELO LDAP
 ```
-###Gerar uma  senha hash
+### Gerar uma  senha hash
 Digite:
 ```bash
 slappasswd
