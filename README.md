@@ -88,7 +88,26 @@ homeDirectory: /home/teste
 loginShell: /bin/bash
 userPassword: GERAR PELO LDAP
 ```
+###Gerar uma  senha hash
+Digite:
+```bash
+slappasswd
+Ele vai pedir para você digitar uma nova senha e retornará algo assim:
+```
+```bash
+{SSHA}nZ/3sz2r4H1XzEwU0qj1pJlXIDVzYQ==
+```
+Substitua a linha olcRootPW no arquivo pelo novo hash
+```bash
+olcRootPW: {SSHA}nZ/3sz2r4H1XzEwU0qj1pJlXIDVzYQ==
+```
 
+Reinicie o serviço LDAP
+
+```bash
+sudo systemctl start slapd
+
+````
 Salve e aplique:
 ```bash
 sudo ldapadd -x -D "cn=admin,dc=meu-dominio,dc=local" -W -f usuarios.ldif
